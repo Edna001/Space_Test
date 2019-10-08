@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="#ffffff"
+             tools:context=".ui.navigation.CompaniesFragment">
+
+    <SearchView android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:queryHint="ძებნა"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="30dp"
+                android:searchIcon="@drawable/ic_search"
+                android:background="@drawable/bg_search_view"/>
+
+    <TextView android:layout_width="350dp"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:id="@+id/popular_services"
+              android:layout_marginVertical="20dp"
+              android:text="@string/communal_payments"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="350dp"
+                                               android:layout_height="match_parent"
+                                               android:id="@+id/popular_recycler"/>
+</LinearLayout>
